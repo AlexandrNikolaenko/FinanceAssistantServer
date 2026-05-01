@@ -156,15 +156,15 @@ function mapRiskLevel(value) {
   const normalized = String(value || "").toLowerCase();
 
   if (normalized.includes("low")) {
-    return "RISK_LEVEL_LOW";
+    return "low";
   }
 
   if (normalized.includes("moderate") || normalized.includes("medium")) {
-    return "RISK_LEVEL_MODERATE";
+    return "medium";
   }
 
   if (normalized.includes("high")) {
-    return "RISK_LEVEL_HIGH";
+    return "high";
   }
 
   return "unknown";
